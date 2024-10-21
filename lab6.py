@@ -21,10 +21,12 @@ def main():
         menu_option = int(input('\nPlease enter an option: '))
         if menu_option == 1:
             user_password = input('Please enter your password to encode: ')
+            #when decode function is made, can replace above line with user_password = encode(user_password)
             encoded_password = encoder(user_password)
             print('Your password has been encoded and stored!')
 
         elif menu_option == 2:
+            #when decode function is made, can assign encoded_password to decode function result
             print(f'The encoded password is {encoded_password}, and the original password is {user_password}.')
 
         elif menu_option == 3:
